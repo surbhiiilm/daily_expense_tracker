@@ -1,0 +1,188 @@
+/* ---------- Basic reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.5;
+}
+
+/* ---------- Header and footer ---------- */
+.header {
+  text-align: center;
+  padding: 30px 16px 10px;
+}
+
+.header h1 {
+  font-size: 28px;
+}
+
+.header p {
+  color: #444444;
+  margin-top: 4px;
+}
+
+.footer {
+  text-align: center;
+  padding: 24px 16px;
+  font-size: 13px;
+  color: #666666;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+/* ---------- Total ---------- */
+.total-card {
+  text-align: center;
+}
+
+.total-amount {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1a8f3c; /* green */
+}
+
+/* ---------- Form ---------- */
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #000000;
+  border-color: #000000;
+}
+
+.btn-add {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: #333333;
+}
+
+.error {
+  color: #c62828;
+  font-size: 14px;
+  min-height: 20px;
+  margin-bottom: 8px;
+}
+
+/* ---------- Table ---------- */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 15px;
+}
+
+th {
+  font-size: 13px;
+  color: #444444;
+  border-bottom: 2px solid #000000;
+}
+
+.right {
+  text-align: right;
+}
+
+.btn-delete {
+  padding: 6px 10px;
+  font-size: 13px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.empty {
+  color: #666666;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .total-amount {
+    font-size: 30px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+    padding: 8px 6px;
+  }
+}
